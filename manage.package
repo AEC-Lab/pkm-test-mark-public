@@ -1,0 +1,26 @@
+{
+	"version": 1,
+	"processes": [],
+	"install": [
+        {
+            "action": "download-source-code",
+            "source": "source_code"
+        },
+        {
+            "action": "copy",
+            "source": "source_code\\testdir",
+            "destination": "$APPDATA\\pkm-test-mark-public"
+        },
+        {
+            "action": "copy",
+            "source": "source_code\\something.json",
+            "destination": "$APPDATA\\pkm-test-mark-public"
+        },
+    ],
+	"uninstall": [
+        {
+            "action": "delete",
+            "source": "$APPDATA\\pkm-test-mark-public"
+        }
+    ]
+}
